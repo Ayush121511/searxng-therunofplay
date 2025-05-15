@@ -1,15 +1,15 @@
 services:
   - type: web
-    name: searxng-api
+    name: searxng-therunofplay
     env: docker
-    repo: https://github.com/your-username/your-searxng-repo
+    repo: https://github.com/Ayush121511/searxng-therunofplay
     branch: main
     plan: free
     dockerContext: .
     dockerfilePath: Dockerfile
     envVars:
       - key: SEARXNG_BASE_URL
-        value: https://searxng-api.onrender.com/
+        value: https://searxng-therunofplay.onrender.com/
       - key: INSTANCE_NAME
         value: my-searxng-instance
     healthCheckPath: /search?q=test&format=json
